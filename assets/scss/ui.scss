@@ -1,0 +1,31 @@
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 3px;
+	min-height: 62px;
+	background-color: $greenColor;
+	font-size: 12px;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 0px 60px;
+	transition: all 0.3s ease 0s;
+	@media (min-width: $md2+px) {
+		&:hover {
+			background-color: #11ba57;
+		}
+	}
+}
+
+
+._title {
+	font-weight: 700;
+	color: $greenColor;
+	text-align: center;
+	@include adaptiv-value("font-size", 36, 28, 1);
+}
+
+
+

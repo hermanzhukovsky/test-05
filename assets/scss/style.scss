@@ -1,0 +1,57 @@
+$minWidth: 320px;
+$maxWidth: 1920px;
+$maxWidthContainer: 1400;
+$md1: $maxWidthContainer;
+$md2: 991.98;
+$md3: 767.98;
+$greenColor: #269f58;
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700");
+@import 'reset.scss';
+@import './fontawesome/fontawesome.scss';
+@import 'mixins.scss';
+@import 'forms.scss';
+@import "ui.scss";
+@import "ibg.scss";
+
+
+body {
+	font-family: "Montserrat";
+	font-size: 14px;
+	font-weight: 400;
+	color: #323232;
+	&._lock {
+		overflow: hidden;
+	}
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+._container {
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+.page {
+	flex: 1 1 auto;
+	&__intro {
+		padding: 0px 0px 60px 0px;
+	}
+	&__about {
+		padding: 0px 0px 33px 0px;
+	}
+	&__technologies {
+		@include adaptiv-value("padding-bottom", 118, 50, 1);
+	}
+	&__contacts {
+		padding: 0px 0px 50px 0px;
+	}
+}
